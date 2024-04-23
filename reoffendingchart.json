@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Proven reoffending rate",
+    "subtitle": ["Proportion of offenders who reoffend"]
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/sdangerfield1/sdangerfield1.github.io/main/offendersdata.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "title": null,
+      "axis": {"labelAngle": 65}
+    },
+    "y": {
+      "field": "Proportion who reoffend",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {"field": "Type of offender"}
+  },
+  "config": {}
+}
