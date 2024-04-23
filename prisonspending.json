@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Real terms Prison Spending",
+    "subtitle": ["2023/24 Prices"]},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {"url": "https://raw.githubusercontent.com/sdangerfield1/sdangerfield1.github.io/main/prison_spending.csv"},
+ 
+  "mark": "bar",
+ 
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":null},
+    "y": {"field": "Real-terms spending (2023/24 prices)", "type": "quantitative", "title":null}
+  }
+}
